@@ -1,12 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Work from './pages/Work';
+import About from './pages/About'
+import NavBar from '@components/NavBar'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+  Link
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/work" component={Work} />
+          <Route path="/about" component={About} />
+          <Route exact path="/">
+            <Redirect to="/work" />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

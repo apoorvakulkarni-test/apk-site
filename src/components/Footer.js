@@ -1,4 +1,5 @@
 import React from 'react'
+import LinkedInLogo from '@images/linkedin.png'
 
 const Footer = () => {
     return (
@@ -9,10 +10,13 @@ const Footer = () => {
             </div>
             <div className="footer-section">
                 <h4 className="footer-section-title">CONNECT</h4>
-                <p className="footer-section-desc">apk11@uw.edu</p>
+                <a href="https://www.linkedin.com/in/apoorvakulkarni/" target="__blank">
+                <img className="footer-logo" src={LinkedInLogo} alt="LinkedIn logo" />
+                </a>
             </div>
              <style jsx>{`
                 .footer {
+                    box-sizing: border-box;
                     border-top: 1px solid #A1A1A1;
                     width: 100%;
                     padding: 20px 60px;
@@ -21,6 +25,10 @@ const Footer = () => {
                     display: flex;
                     flex-direction: row;
           
+                }
+                .footer-logo {
+                    width: 25px;
+                    padding: 12px 0;
                 }
                 .footer-section {
                     margin: 0 40px;

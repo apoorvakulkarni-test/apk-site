@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutImage from '@images/about.jpg'
+import { BODY_MARGIN } from '@consts'
 
 const About = () => {
     return (
@@ -20,13 +21,14 @@ const About = () => {
             </div>
             <style jsx>{`
                 .about-container {
+                    padding: ${BODY_MARGIN};
                     display: flex;
                     flex-direction: column;
                 }
                 .about-header {
                     font-family: PrimaryFont;
                     font-weight: 300;
-                    font-size: 25px;
+                    font-size: 40px;
                 }
                 .about-body-container {
                     display: flex;
@@ -46,6 +48,19 @@ const About = () => {
                     max-height: 100vh;
                     margin-right: 25px;
                     object-fit: contain;
+                }
+                @media (max-width: 1090px) {
+                    .about-container {
+                        margin-top: 0;
+                    }
+                    .about-body-container {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .about-desc {
+                        margin-top: 10px;
+                    }
                 }
             `}</style>
         </div>

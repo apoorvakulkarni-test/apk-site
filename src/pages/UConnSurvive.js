@@ -3,6 +3,11 @@ import Banner from '@design/Banner'
 import Container from '@design/Container'
 import H2 from '@design/H2'
 import UconnSurivePic from '@images/ucs-card.png'
+import UCSColor from '@images/ucs-color.png'
+import USCProposed1 from '@images/usc-1.gif'
+import USCProposed2 from '@images/usc-2.gif'
+import USCProposed3 from '@images/usc-3.gif'
+
 
 
 const UConnSurvive = () => {
@@ -33,10 +38,23 @@ const UConnSurvive = () => {
             <Container color="white">
                 <H2 top="DESIGN" bottom="To Figma We Go!" />
                 <p className="design-para">Through a website, survivors and allies have access to all types of resources, from hotlines to organizations. They can also submit their story, view submitted survivor stories and learn more about UConn Survive.</p>
+                <div className="flex-row flex-center padding-25">
+                    <img className="width-50" alt="USC-1" src={USCProposed1} />
+                    <p className="design-para width-50 padding-25"><span className="bold">Home page:</span> The primary function of the website was to view and share stories and this was also the first basic feature I built and laid the foundation to the product.Users also have access to more information about UConn Survive. Understanding why and how the platform was created helps survivors gain a more thorough perspective of UConn Survive’s values and beliefs. In addition, I included the “How we helped” section with the hope that survivors who are uncertain about sharing their story are motivated and empowered to share their own story.</p>
+                </div>
+                <div className="flex-row flex-center padding-25">
+                    <img className="width-50" alt="USC-2" src={USCProposed2} />
+                    <p className="design-para width-50 padding-25"><span className="bold">How to help:</span> Being told that someone has been assaulted, abused or harassed can be incredibly scary, emotional and shocking for the one being told as well as the survivor. Many times we are unsure of how to respond and what to do. Even though one might want to ask questions, express outrage and offer advice, these expressions may come across as judgemental and detrimental to the survivor. Hence, it is important to learn and understand how to help survivors the right way.</p>
+                </div>
+                <div className="flex-row flex-center padding-25">
+                    <img className="width-50" alt="USC-3" src={USCProposed3} />
+                    <p className="design-para width-50 padding-25"><span className="bold">Need help:</span> Survivors are often confused and frustrated about how to get help. Providing the appropriate guidance, support and set of resources can be extremely beneficial to their path of recovery.</p>
+                </div>
             </Container>
             <Container color="black">
                 <H2 top="BRANDING" bottom="Visual Language" />
                 <p className="design-para">The main intention of UConn Survive is to encourage, not force, people to share their stories in order to empower others to share their own to spread awareness and educate others on abuse, assault and harassment at UConn. Visual design plays a major role in fostering a sense of approachability and warmth on this platform. I aimed to evoke a sense of compassion, authenticity, and expressiveness, featuring encouraging, friendly illustrations, and calming, empowering colors.</p>
+                <img className="center-mg max-width-100"alt="UConn Survive Color" src={UCSColor} />
             </Container>
             <Container color="white">
                 <H2 top="REFLECTION" bottom="Summary" />

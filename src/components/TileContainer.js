@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import useVisibilitySensor from "@rooks/use-visibility-sensor"
+import LockIcon from '@images/lock.png'
 
 const TileContainer = (props) => {
     const rootNode = useRef(null)
@@ -20,11 +21,16 @@ const TileContainer = (props) => {
         <div ref={rootNode} className={titleContainerClasses}>
             <h2 className="tile-title">{props.title}</h2>
             <div className="tile-body">
-                {props.tiles.map(({ title, desc, pic, dest }) => (
-                    <Link to={dest} className="tile-image-container">
+                {props.tiles.map(({ title, desc, pic, dest, logo, locked }) => (
+                    <Link
+                        style={{
+                            backgroundImage: `url(${logo})`
+                        }} 
+                        to={dest} 
+                        className="tile-image-container">
                         <img alt="Tile" className="tile-image" src={pic} />
                         <div className="tile-image-info">
-                            <h3 className="tile-image-info-title">{title}</h3>
+                            <h3 className="tile-image-info-title">{title} {locked === true &&<img alt="Lock Icon" src={LockIcon}></img>}</h3>
                             <p className="tile-image-desc">{desc}</p>
                         </div>
                     </Link>
@@ -46,6 +52,9 @@ const TileContainer = (props) => {
                     opacity: 1;
                     transform: none;
                 }
+                .tile-logo {
+
+                }
                 .tile-body {
                     display: flex;
                     flex-direction: row;
@@ -54,12 +63,14 @@ const TileContainer = (props) => {
 
                 }
                 .tile-image-container {
+                    background-repeat: no-repeat;
+                    background-position: center 25%;
+                    background-size: calc(25% + 70px) auto;
                     position: relative;
-                    background: white;
+                    background-color: white;
                     margin: 10px;
-                    width: 45%;
-                    min-width: 250px;
-                    
+                    min-width: 48%;
+                    flex: 1;
                 }
                 .tile-image-container:hover {
                     cursor: pointer;
@@ -99,9 +110,8 @@ const TileContainer = (props) => {
                     font-family: PrimaryBold;
                     color: white;
                     font-weight: 100;
-                    margin-top: 60px;
+                    margin: 60px 0;
                     font-size: 40px;
-                    margin-bottom: 20px;
                 }
                 .tile-image-desc {
                     font-family: PrimaryBold;

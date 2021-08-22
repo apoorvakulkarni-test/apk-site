@@ -18,7 +18,7 @@ const Introduction = () => {
                 <p className="hook">Hey there!</p>
                 <p className="introduction-desc">I’m a product designer who’s passionate about creating experiences that empower and make an impact on people’s lives.
                 I’ve previously designed @<ExternalLink link={AMAZON_LINK}>Amazon</ExternalLink>, 
-                @<ExternalLink>Vital Strategies</ExternalLink> &amp; 
+                @<ExternalLink link="https://www.vitalstrategies.org/">Vital Strategies</ExternalLink> &amp; 
                 @<ExternalLink>SimplyDoc</ExternalLink></p>
             </div>
             <style jsx>{`
@@ -48,9 +48,9 @@ const Introduction = () => {
                     text-decoration: none;
                     font-weight: 400;
                     color: black;
-                    :hover {
-                        text-decoration: underline;
-                    }
+                }
+                .introduction-link:hover {
+                    text-decoration: underline;
                 }
                 .hook {
                     font-family: PrimaryFont;

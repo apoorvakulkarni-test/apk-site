@@ -2,8 +2,14 @@ import Banner from '@design/Banner'
 import Container from '@design/Container'
 import H2 from '@design/H2'
 import WishImage from '@images/wish-card.gif'
+import WishQuote from '@images/wish-quote.png'
+import WishCurrent from '@images/wish-current.png'
+import FloProposed1 from '@images/flo-proposed-1.png'
+import FloProposed2 from '@images/flo-proposed-2.png'
+import FloProposed3 from '@images/flo-proposed-3.png'
 
 const Wish = () => {
+    window.scrollTo(0,0)
     return (
         <div>
             <Banner pic={WishImage} />
@@ -19,6 +25,7 @@ const Wish = () => {
                 <p className="design-para">Choose an existing company, organization, or social movement and help them design a mobile experience that allows an individual to tackle a major problem afflicting society today.</p>
                 <h3 className="design-h3 gray">What is period poverty?</h3>
                 <p className="design-para">Period poverty is the lack of access to sanitary products, menstrual hygiene education, toilets, hand washing facilities, and, or, waste management.</p>
+                <img className="center-mg max-width-100" alt="Wish quote" src={WishQuote} />
                 <h3 className="design-h3 gray">Challenge</h3>
                 <p className="design-para">How might we create an experience that makes menstrual products more accessible for disadvantaged communities?</p>
                 <h3 className="design-h3 gray">Outcome</h3>
@@ -67,8 +74,29 @@ By leveraging the strong community at Flo, we will use the power of knowledge to
             <Container color="white">
                 <H2 top="DESIGN" bottom="To Figma we go!" />
                 <h3 className="design-h3 gray">Current application</h3>
+                <img className="center-mg max-width-100" alt="Wish quote" src={WishCurrent} />
                 <h3 className="design-h3 gray">Proposed design</h3>
                 <p className="design-para">I proposed an extension of Flo that allowed users to raise money for organizations that helped disadvantaged communities gain access to menstrual hygiene products. </p>
+                <div className="flex-row flex-center">
+                   <img className="width-50" src={FloProposed1} alt="Proposed Flo 1" />
+                   <span className="width-50 design-para">
+                   <span className="bold">Donate tab:</span> This section allows users to find organizations and facilities. Users can filter their search by location and type of organization.  When an organization is selected, users are provided with a brief description of what the organization stands for and how a user’s donation can impact someone’s life. 
+                   </span>
+                </div>
+                <div className="flex-row flex-center">
+                    <img className="width-50" src={FloProposed2} alt="Proposed Flo 2" />
+                    <span className="width-50 design-para">
+                        <span className="bold">Donation Process: </span>Users have two options of donation:
+                        <br /> • One-time: One time, one amount
+                        <br /> • Subscription: Monthly recurring payment to help the disadvantaged community gain stability.
+                    </span>
+                </div>
+                <div className="flex-row flex-center">
+                    <img className="width-50" src={FloProposed3} alt="Proposed Flo 3" />
+                    <span className="width-50 design-para">
+                        <span className="bold">Status update: </span>Users also receive notifications about the status of their donation so they know that their money is actually being used and not just being collected. This creates a connection between the organization and user which may encourage users to donate more.
+                    </span>
+                </div>
             </Container>
             <Container color="black">
                 <H2 top="REFLECTION" bottom="Lessons learned" />
@@ -80,9 +108,9 @@ By leveraging the strong community at Flo, we will use the power of knowledge to
                 <h3 className="design-h3">What did I take away from this?</h3>
                 <p className="design-para"> • When in doubt, look back at your research findings! I found that refreshing myself on the disadvantaged communities and their pain points helped me develop a thorough understanding of the problem space which later helped me when I designed my solution.
                 <br />• Thinking from not only the donor’s perspective but also the members of the disadvantaged communities, Flo taught me about the multiple roles involved in product design. For a product to be successful, a designer must design a solution that solves the problem from the design, business as well as outreach lens.
-                <br />• One of Flo’s values is inclusivity and I wanted that to be reflected throughout the design process. As a designer, I have the ability and responsibility to ingrain greater diversity and representation into my designs.
-</p>
+                <br />• One of Flo’s values is inclusivity and I wanted that to be reflected throughout the design process. As a designer, I have the ability and responsibility to ingrain greater diversity and representation into my designs.</p>
             </Container>
+
         </div>
     )
 }

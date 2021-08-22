@@ -2,6 +2,14 @@ import React from 'react'
 import Banner from '@design/Banner'
 import Container from '@design/Container'
 import RiderCard from '@images/rider-card.png'
+import RiderOne from '@images/rider-1.png'
+import RiderTwo from '@images/rider-2.png'
+import RiderThree from '@images/rider-3.png'
+import RiderFour from '@images/rider-4.png'
+import RiderFive from '@images/rider-5.png'
+import RiderSix from '@images/rider-6.png'
+import RiderSeven from '@images/rider-7.png'
+import RiderIdea from '@images/rider-ideation.png'
 import H2 from '@design/H2'
 
 const Rider = () => {
@@ -68,11 +76,13 @@ After conducting surveys and creating a user profile, the majority of the respon
                 <p className="design-para"><b>Severity</b>: 2
 <br /><b>Heuristic</b>: Consistency and standards, Recognition rather than recall
 <br /><b>Description</b>: Since the bus travelling icon is the same as the current location icon, it creates confusion within the user. Users would have to remember that the icon that moves is the bus and not the current location icon. Further, the bus stop icon used in the menu bar differs from the one on the map. When the user clicks on the bus stop icon on the map, it transforms into the icon used in the menu bar.</p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderOne} />
                 <h3 className="design-h3 gray">Task 2: Setting a timer notification</h3>
                 <p className="design-para bold">a) Limits customization</p>
                 <p className="design-para"><b>Severity:</b> 2
                 <br /><b>Heuristic evaluation</b>: Flexibility and efficiency of use
                 <br /><b>Description</b>: When setting a reminder, users are only given the option of times that are in 5 minute intervals. Although this gives the user an opportunity to save time by setting a notification, the user is not given the liberty to customize the amount of time that they would like to be notified. This affected the ease of use, satisfaction of the user and time efficiency negatively.</p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderTwo} />
                 <h3 className="design-h3 gray">Task 3: Using the favorite feature</h3>
                 <p className="design-para bold">a) Insufficient information regarding the favorite feature.</p>
                 <p className="design-para"><b>Severity: 3</b>
@@ -82,24 +92,31 @@ After conducting surveys and creating a user profile, the majority of the respon
                 <p className="design-para"><b>Severity</b>: 3
                 <br /><b>Heuristic evaluation</b>: Consistency and Standards, Error prevention
                 <br /><b>Description</b>: While some users may be unsure which heart the instructions were referring to, other users may struggle to find the heart. Since the heart is a very small icon, it emphasised the ambiguity of whether the heart was an indicator or a clickable button. Additionally, there are other icons surrounding the small heart icon making it easy for users to accidently click the other icons. Overall, the favorite feature needs to be better.</p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderThree} />
             </Container>
             <Container color="black">
                 <H2 top="EXPLORATION" bottom="Ideation" />
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderIdea} />
             </Container>
             <Container color="white">
                 <H2 top="DESIGN" bottom="To Figma We Go!" />
                 <h3 className="design-h3">Organization</h3>
                 <p className="design-para">With further inspection, I noticed that the settings tab consisted of a bunch of miscellaneous actions along with actual setting actions. The navigation bar restricted the design to four actions resulting in various other actions being grouped in the settings tab. Transforming the navigation bar into a menu allows for the grouping of more actions in an organized manner and is easier to understand as there are symbols along with the titles.
 </p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderFour} />
                 <h3 className="design-h3">Consistent and clear iconography</h3>
                 <p className="design-para">To make the application clearer, new and improved iconography is needed. I noticed that there were two inconsistent icons: bus stop and current location. By implementing improved icons for the bus stop icon and current location, the application will become more consistent and clear. Furthermore, adding relevant symbols to the menu options helps users to visually interpret actions as well.</p>
+                
                 <h3 className="design-h3">Lack of automated result</h3>
                 <p className="design-para">By implementing an automated result function the user is provided the nearest bus stop to the user’s destination when the user searches for their desired destination. This reduces time, makes the interaction faster and builds trust between the system and user. It eliminates the painful manual search making the process of finding transits much more efficient.</p>
                 <p className="design-para">To make this even more convenient, the transfer feature allows users to choose various routes with or without a transfer option. A transfer route is a route that has one or more bus transfers. There may be times when the user would like to go to a particular destination that does not have a direct route. It may require the user to either walk for a while or hop on an additional bus line to get to the desired location. This provides users with the option to choose the most suitable route for their trip.</p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderFive} />
                 <h3 className="design-h3">Bus routes directory</h3>
                 <p className="design-para">By adding a bus routes feature, it provides the user with necessary information such as the bus stops a particular bus line makes and the route the bus travels in. Users can leisurely view this list by clicking on the bus routes feature in the menu bar or by simply clicking on the icon of a bus line.</p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderSix} />
                 <h3 className="design-h3">Notification feature</h3>
                 <p className="design-para">The notification feature was redesigned to give the user more control and freedom. This feature enables the user to select a specific amount of time before the user wants to receive the bus arrival notification. In addition, in the case of transfer routes, the user can select which bus line to be notified for, providing the user with ultimate control and customisation over the interaction.</p>
+                <img className="center-mg max-width-100" alt="Rider 1" src={RiderSeven} />
                 <h3 className="design-h3">Home address</h3>
                 <p className="design-para">Most users did not know how to use the favorite feature due to the lack of instruction.
 Favoriting a bus line seemed impractical since users were most likely to select a favorite/most visited destination rather than a particular bus line. Users most likely would not travel to and from the same locations, therefore, a home address seemed more fitting.</p>

@@ -1,15 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { BODY_MARGIN } from '@consts'
+import Resume from '@images/resume.pdf'
 
-const NavBar = (props) => {
+const NavBar = () => {
+    const { pathname } = useLocation()
+    const getClasses = (pattern) => pathname.includes(pattern) ? "menu-option black" : "menu-option"
     return (
         <div className="container">
-            <h1 className="name">APOORVA KULKARNI</h1>
+            <a className="styleless-link" href="/"><h1 className="name">APOORVA KULKARNI</h1></a>
             <div className="menu-option-container">
-                <Link className="menu-option" to="/work">WORK</Link>
-                <Link className="menu-option" to="/about">ABOUT</Link>
-                <Link className="menu-option">RESUME</Link>
+                <Link className={getClasses("/work")} to="/work">WORK</Link>
+                <Link className={getClasses("/about")} to="/about">ABOUT</Link>
+                <a href={Resume} target="__blank" className="menu-option">RESUME</a>
             </div>
             <style jsx>{`
                 .container {
@@ -18,6 +21,9 @@ const NavBar = (props) => {
                     flex-direction: flex-row;
                     justify-content: flex-start;
                     align-items: center;
+                }
+                .black {
+                    color: black !important;
                 }
                 .name {
                     font-family: PrimaryFont;

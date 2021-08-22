@@ -3,7 +3,7 @@ import React from 'react'
 const Banner = (props) => {
     return (
         <div>
-            <img className="banner-pic" src={props.pic} />
+            <img alt="Banner" className="banner-pic" src={props.pic} />
             <style jsx>{`
                 .banner-pic {
                     width: 100%;

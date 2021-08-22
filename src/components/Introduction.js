@@ -1,7 +1,6 @@
 import HelloImage from '@images/hello.png'
 import { BODY_MARGIN } from '@consts'
 
-const UW_HCDE_LINK = "https://www.hcde.washington.edu/"
 const AMAZON_LINK = "https://www.amazon.com/"
 
 const ExternalLink = (props) => (

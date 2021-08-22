@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="about-container">
             <div className="about-body-container">
-                <img className="about-image" src={AboutImage} />
+                <img alt="About" className="about-image" src={AboutImage} />
                 <div className="about-desc">
                     <h1 className="about-header">Practical in mind. Creative at heart</h1>
                     <p>I’m a first-year graduate student at the University of Washington, studying Human-Centered Design &amp; Engineering. I am passionate about creating experiences that help others and make an impact on people’s lives.</p>

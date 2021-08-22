@@ -5,8 +5,6 @@ import WishCard from '@images/wish-card.gif'
 import UCSCard from '@images/ucs-card.png'
 import RiderCard from '@images/rider-card.png'
 
-const tiles = new Array(4).fill(0)
-
 const tilesContent = [
   {
     title: "SPONSPORED PROJECT",

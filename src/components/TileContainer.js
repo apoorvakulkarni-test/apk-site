@@ -1,8 +1,6 @@
-import React, { useRef, useState } from 'react'
-import PlaceHolder from '@images/placeholder.png'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import useVisibilitySensor from "@rooks/use-visibility-sensor"
-import AmazonCard from '@images/amazon-card.gif'
 
 const TileContainer = (props) => {
     const rootNode = useRef(null)
@@ -24,7 +22,7 @@ const TileContainer = (props) => {
             <div className="tile-body">
                 {props.tiles.map(({ title, desc, pic, dest }) => (
                     <Link to={dest} className="tile-image-container">
-                        <img className="tile-image" src={pic} />
+                        <img alt="Tile" className="tile-image" src={pic} />
                         <div className="tile-image-info">
                             <h3 className="tile-image-info-title">{title}</h3>
                             <p className="tile-image-desc">{desc}</p>

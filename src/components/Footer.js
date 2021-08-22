@@ -1,5 +1,4 @@
 import React from 'react'
-import { BODY_MARGIN } from '@consts'
 
 const Footer = () => {
     return (

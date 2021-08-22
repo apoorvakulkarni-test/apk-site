@@ -4,7 +4,9 @@ import Container from '@design/Container'
 import H2 from '@design/H2'
 import UconnSurivePic from '@images/ucs-card.png'
 
+
 const UConnSurvive = () => {
+    window.scrollTo(0,0)
     return (
         <div>
             <Banner pic={UconnSurivePic} />
@@ -44,24 +46,6 @@ const UConnSurvive = () => {
             <Container color="black">
                 <H2 top="MOVING FORWARD" bottom="Next Steps" />
                 <p className="design-para">I’m putting my designer hat back on to gather more user feedback on the current MVP to improve the design and promote long-term engagement as well as include more features that can benefit survivors and allies.</p>
-            </Container>
-            <Container color="white">
-                <H2 top="DESIGN" bottom="To Figma We Go!" />
-                <h3 className="design-h3">Current Application</h3>
-                <h3 className="design-h3">Proposed Designs</h3>
-            </Container>
-            <Container color="black">
-                <H2 top="REFLECTION" bottom="LESSONS LEARNED" />
-                <h3 className="design-h3">If I had more time...</h3>
-                <p className="design-para">• Tested this solution to find areas of improvement
-                <br />• Found more innovative donation methods</p>
-                <h3 className="design-h3">Biggest Challenge...</h3>
-                <p className="design-para">Designing a mobile experience that helps people without access to smartphones.</p>
-                <h3 className="design-h3">What did I take away from this?</h3>
-                <p className="design-para"><br />• When in doubt, look back at your research findings! I found that refreshing myself on the disadvantaged communities and their pain points helped me develop a thorough understanding of the problem space which later helped me when I designed my solution.
-                <br />• Thinking from not only the donor’s perspective but also the members of the disadvantaged communities, Flo taught me about the multiple roles involved in product design. For a product to be successful, a designer must design a solution that solves the problem from the design, business as well as outreach lens.
-                <br />• One of Flo’s values is inclusivity and I wanted that to be reflected throughout the design process. As a designer, I have the ability and responsibility to ingrain greater diversity and representation into my designs.
-</p>
             </Container>
         </div>
     )

@@ -5,6 +5,7 @@ import RiderCard from '@images/rider-card.png'
 import H2 from '@design/H2'
 
 const Rider = () => {
+    window.scrollTo(0,0)
     return (
         <div>
             <Banner pic={RiderCard} />
@@ -104,6 +105,12 @@ After conducting surveys and creating a user profile, the majority of the respon
 Favoriting a bus line seemed impractical since users were most likely to select a favorite/most visited destination rather than a particular bus line. Users most likely would not travel to and from the same locations, therefore, a home address seemed more fitting.</p>
                 <h3 className="design-h3">Rudimentary instructions</h3>
                 <p className="design-para">Overall, the application does provide enough context and instruction for the user to thoroughly understand all of it’s functionality. The dearth of help and documentation proves to be detrimental to the user experience. Creating an instructional help section and introduction instruction will give first time users more assistance to navigate through the application and an overview of the features available within the application.</p>
+            </Container>
+            <Container color="black">
+                <H2 top="REFLECTION" bottom="Summary" />
+                <p className="design-para">Undoubtedly, the team at TransLoc conducted a lot of research and iterations in order to produce the product that we see today. They created the application based on the amount of data that they had while conducting user research and consequently, the features and how they have been laid out must have been the outcome of that research while prioritising the company’s personal agenda and goals.</p>
+                <p className="design-para">It would be the height of hubris to say that this redesign has “fixed” all the current issues in TransLoc Rider.The amount of research that has been done by me within a limited period of time is fairly small compared to what the TransLoc Rider team did. I absolutely think a lot more research, usability testing, and iterations can be done to improve the application’s user experience; after all, design is a continuous process!</p>
+                <p className="design-para">As a designer, my main priority was to think from the user’s perspective and address their respective wants and needs. I hope I was able to create a new and more user friendly Rider user interface, and I look forward to new additions from TransLoc that will further make the application open to a broadening population.</p>
             </Container>
         </div>
     )

@@ -64,6 +64,25 @@ By leveraging the strong community at Flo, we will use the power of knowledge to
                 <br /> • Flo does not have to facilitate the delivery of these items.
 </p>
             </Container>
+            <Container color="white">
+                <H2 top="DESIGN" bottom="To Figma we go!" />
+                <h3 className="design-h3 gray">Current application</h3>
+                <h3 className="design-h3 gray">Proposed design</h3>
+                <p className="design-para">I proposed an extension of Flo that allowed users to raise money for organizations that helped disadvantaged communities gain access to menstrual hygiene products. </p>
+            </Container>
+            <Container color="black">
+                <H2 top="REFLECTION" bottom="Lessons learned" />
+                <h3 className="design-h3">If I had more time...</h3>
+                <p className="design-para">• Tested this solution to find areas of improvement
+                <br />• Found more innovative donation methods</p>
+                <h3 className="design-h3">Biggest challenge...</h3>
+                <p className="design-para">Designing a mobile experience that helps people without access to smartphones.</p>
+                <h3 className="design-h3">What did I take away from this?</h3>
+                <p className="design-para"> • When in doubt, look back at your research findings! I found that refreshing myself on the disadvantaged communities and their pain points helped me develop a thorough understanding of the problem space which later helped me when I designed my solution.
+                <br />• Thinking from not only the donor’s perspective but also the members of the disadvantaged communities, Flo taught me about the multiple roles involved in product design. For a product to be successful, a designer must design a solution that solves the problem from the design, business as well as outreach lens.
+                <br />• One of Flo’s values is inclusivity and I wanted that to be reflected throughout the design process. As a designer, I have the ability and responsibility to ingrain greater diversity and representation into my designs.
+</p>
+            </Container>
         </div>
     )
 }

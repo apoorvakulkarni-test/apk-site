@@ -4,6 +4,18 @@
 }
 
 @font-face {
+  font-family: 'PrimaryBold';
+  src: url('./assets/fonts/Rubik-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'PrimaryLight';
+  src: url('./assets/fonts/Rubik-Light.ttf');
+}
+
+
+
+@font-face {
   font-family: 'SecondaryFont';
   src: url('./assets/fonts/Inter-Light.ttf');
 }
@@ -14,7 +26,7 @@
 }
 
 body {
-  margin: 48px;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -45,4 +57,35 @@ code {
 
 .justify-start {
   justify-content: start;
+}
+
+
+.design-h1 {
+  font-size: 40px;
+  font-family: PrimaryFont;
+}
+.design-h1-desc {
+  font-size: 24px;
+  font-family: PrimaryLight;
+}
+.design-h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.gray {
+  color: #828282;
+}
+.design-info {
+  margin-right: 5em;
+  font-size: 18px;
+  font-family: PrimaryLight;
+}
+.design-para {
+  font-family: SecondaryFont;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+.bold {
+  font-weight: bold;
 }

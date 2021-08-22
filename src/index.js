@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Work from './pages/Work';
 import About from './pages/About'
+import UConnSurvive from './pages/UConnSurvive'
+import Rider from './pages/Rider'
+import Wish from './pages/Wish'
 import NavBar from '@components/NavBar'
+import Footer from '@components/Footer'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
-  Link
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
@@ -19,12 +22,16 @@ ReactDOM.render(
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/work" component={Work} />
+          <Route exact path="/work" component={Work} />
           <Route path="/about" component={About} />
           <Route exact path="/">
             <Redirect to="/work" />
           </Route>
+          <Route exact path="/work/uconnsurvive" component={UConnSurvive} />
+          <Route exact path="/work/wish" component={Wish} />
+          <Route exact path="/work/rider" component={Rider} />
         </Switch>
+        <Footer />
       </Router>
     </div>
     

@@ -1,3 +1,5 @@
+import HelloImage from '@images/hello.png'
+import { BODY_MARGIN } from '@consts'
 
 const UW_HCDE_LINK = "https://www.hcde.washington.edu/"
 const AMAZON_LINK = "https://www.amazon.com/"
@@ -8,23 +10,28 @@ const ExternalLink = (props) => (
         href={props.link} target="__blank">{props.children}
     </a>
 )
+
 const Introduction = () => {
     return (
         <div className="introduction-container">
-            <div className="flex-row justify-start">
-                <p className="hook">Designer. 
-                    <span className="opaque-50"> Sometimes coder.</span> 
-                    <span className="opaque-25"> Occasional cup stacker</span>
-                </p>
+            <div className="flex-col justify-start introduction-content">
+                <img className="introduction-image" src={HelloImage} alt="Apoorva saying hi" />
+                <p className="hook">Hey there!</p>
+                <p className="introduction-desc">I’m a product designer who’s passionate about creating experiences that empower and make an impact on people’s lives.
+                I’ve previously designed @<ExternalLink link={AMAZON_LINK}>Amazon</ExternalLink>, 
+                @<ExternalLink>Vital Strategies</ExternalLink> &amp; 
+                @<ExternalLink>SimplyDoc</ExternalLink></p>
             </div>
-            <div className="line"></div>
-            <p className="introduction-desc">I’m a first-year M.S HCDE student @ <ExternalLink link={UW_HCDE_LINK}>University of Washington</ExternalLink>. 
-            I’ve previously designed @<ExternalLink link={AMAZON_LINK}>Amazon</ExternalLink>, 
-            @<ExternalLink>Vital Strategies</ExternalLink> &amp; 
-            @<ExternalLink>SimplyDoc</ExternalLink></p>
-
             <style jsx>{`
+                .introduction-image {
+                    width: 33%;
+                    position: absolute;
+                    right: 0;
+                    top: calc(50% - (33vw / 2));              
+                }
                 .introduction-container {
+                    margin: ${BODY_MARGIN};
+                    margin-top: 0;
                     height: 77vh;
                     display: flex;
                     flex-direction: column;
@@ -35,7 +42,7 @@ const Introduction = () => {
                     font-family: SecondaryFont;
                     font-size: 25px;
                     line-height: 40px;
-                    width: 750px;
+                    max-width: 75%;
                 }
                 .introduction-link {
                     font-family: SecondaryBoldFont;
@@ -49,8 +56,8 @@ const Introduction = () => {
                 .hook {
                     font-family: PrimaryFont;
                     color: black;
-                    font-size: 35px;
-                    font-weight: bold;
+                    font-size: 40px;
+                    margin: 0;
                 }
                 .opaque-50 {
                     opacity: 0.5;

@@ -1,0 +1,1 @@
+export const BODY_MARGIN = '40px';

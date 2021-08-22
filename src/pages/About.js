@@ -1,11 +1,11 @@
 import React from 'react'
-import PlaceHolder from '@images/placeholder.png'
+import AboutImage from '@images/about.jpg'
 
 const About = () => {
     return (
         <div className="about-container">
             <div className="about-body-container">
-                <img className="about-image" src={PlaceHolder} />
+                <img className="about-image" src={AboutImage} />
                 <div className="about-desc">
                     <h1 className="about-header">Practical in mind. Creative at heart</h1>
                     <p>I’m a first-year graduate student at the University of Washington, studying Human-Centered Design &amp; Engineering. I am passionate about creating experiences that help others and make an impact on people’s lives.</p>
@@ -36,11 +36,16 @@ const About = () => {
                 }
                 .about-desc {
                     flex: 1;
+                    padding: 0 20px;
+                }
+                .about-desc > p, ul, li {
+                    line-height: 2em;
                 }
                 .about-image {
                     width: 50%;
-                    height: 400px;
+                    max-height: 100vh;
                     margin-right: 25px;
+                    object-fit: contain;
                 }
             `}</style>
         </div>

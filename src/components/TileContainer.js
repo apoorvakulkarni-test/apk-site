@@ -43,7 +43,7 @@ const TileContainer = (props) => {
                     flex-direction: column;
                     background-color: black;
                     padding: 0 48px;
-                    padding-bottom: 15px;
+                    padding-bottom: 40px;
                     opacity: 0.3;
                     transform: scale(0.93);
                     transition: 0.3s;

@@ -16,15 +16,7 @@ const tilesContent = [
     pic: AmazonCard,
     logo: AmazonLogo,
     dest: "work/amazon",
-    logoSize: "calc(25% + 85px) auto"
-  },
-  {
-    title: "DESIGN CHALLENGE",
-    desc: "Making menstrual hygiene products more accessible with Flo",
-    pic: WishCard,
-    dest: "work/wish",
-    logo: FloLogo,
-    logoSize: "calc(25% + 70px) auto"
+    logoSize: "calc(29% + 85px) auto"
   },
   {
     title: "PASSION PROJECT",
@@ -35,12 +27,20 @@ const tilesContent = [
     logoSize: "calc(25% + 40px) auto"
   },
   {
+    title: "DESIGN CHALLENGE",
+    desc: "Making menstrual hygiene products more accessible with Flo",
+    pic: WishCard,
+    dest: "work/wish",
+    logo: FloLogo,
+    logoSize: "calc(29% + 70px) auto"
+  },
+  {
     title: "INDIVIDUAL PROJECT",
     desc: "Designing a simpler, faster transit system around campus",
     pic: RiderCard,
     dest: 'work/rider',
     logo: TranslocLogo,
-    logoSize: "calc(30% + 120px) auto"
+    logoSize: "calc(18% + 25px) auto"
   },
 ]
 function Work() {

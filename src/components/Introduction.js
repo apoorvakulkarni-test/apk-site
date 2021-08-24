@@ -19,7 +19,7 @@ const Introduction = () => {
                 <p className="introduction-desc">I’m a product designer who’s passionate about creating experiences that empower and make an impact on people’s lives.
                 I’ve previously designed @<ExternalLink link={AMAZON_LINK}>Amazon</ExternalLink>, 
                 @<ExternalLink link="https://www.vitalstrategies.org/">Vital Strategies</ExternalLink> &amp; 
-                @<ExternalLink>SimplyDoc</ExternalLink></p>
+                @<span className="simply-doc">SimplyDoc</span></p>
             </div>
             <style jsx>{`
                 .introduction-image {
@@ -51,6 +51,12 @@ const Introduction = () => {
                 }
                 .introduction-link:hover {
                     text-decoration: underline;
+                }
+                .simply-doc {
+                    font-family: SecondaryBoldFont;
+                    text-decoration: none;
+                    font-weight: 400;
+                    color: black;
                 }
                 .hook {
                     font-family: PrimaryFont;

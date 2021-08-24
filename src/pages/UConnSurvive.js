@@ -36,7 +36,7 @@ const UConnSurvive = () => {
 <br />• Many times, survivors are not given a sense of control. They are either ignored and forced to not share their story because if they do, no one would ever believe them. Creating a space where survivors were supported, believed, helped and heard was important and that was the kind of platform I wanted to design.</p>
             </Container>
             <Container color="white">
-                <H2 top="DESIGN" bottom="To Figma We Go!" />
+                <H2 top="DESIGN" bottom="To Figma we go!" />
                 <p className="design-para">Through a website, survivors and allies have access to all types of resources, from hotlines to organizations. They can also submit their story, view submitted survivor stories and learn more about UConn Survive.</p>
                 <div className="flex-row flex-center padding-25">
                     <img className="width-50" alt="USC-1" src={USCProposed1} />

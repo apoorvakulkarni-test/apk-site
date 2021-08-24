@@ -65,7 +65,7 @@ After conducting surveys and creating a user profile, the majority of the respon
                 </p>
             </Container>
             <Container color="white">
-                <H2 top="HEURISTICS" bottom="Evaluation Findings" />
+                <H2 top="HEURISTICS" bottom="Evaluation findings" />
                 <p className="design-para">Most of the confusion was due to the absence of an onboarding process.The application was complicated and caused users to rely on self-instruction to navigate the application. The iconography was also difficult to interpret as they were uncommon and did not have any labels to clarify the vagueness.</p>
                 <h3 className="design-h3 gray">Task 1: Searching and selecting a bus route to travel</h3>
                 <p className="design-span bold">a) Lack of automated result</p>
@@ -100,7 +100,7 @@ After conducting surveys and creating a user profile, the majority of the respon
                 <img className="center-mg max-width-100" alt="Rider 1" src={RiderIdea} />
             </Container>
             <Container color="white">
-                <H2 top="DESIGN" bottom="To Figma We Go!" />
+                <H2 top="DESIGN" bottom="To Figma we go!" />
                 <h3 className="design-h3">Organization</h3>
                 <p className="design-para">With further inspection, I noticed that the settings tab consisted of a bunch of miscellaneous actions along with actual setting actions. The navigation bar restricted the design to four actions resulting in various other actions being grouped in the settings tab. Transforming the navigation bar into a menu allows for the grouping of more actions in an organized manner and is easier to understand as there are symbols along with the titles.
 </p>

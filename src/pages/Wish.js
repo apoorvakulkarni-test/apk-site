@@ -20,8 +20,8 @@ const Wish = () => {
                 <span className="design-info">Type: Individual project</span>
             </Container>
             <Container color="white">
-                <H2 top="OVERVIEW" bottom="Project Description" />
-                <h3 className="design-h3 gray">Design Challenge Prompt</h3>
+                <H2 top="OVERVIEW" bottom="Project description" />
+                <h3 className="design-h3 gray">Design challenge prompt</h3>
                 <p className="design-para">Choose an existing company, organization, or social movement and help them design a mobile experience that allows an individual to tackle a major problem afflicting society today.</p>
                 <h3 className="design-h3 gray">What is period poverty?</h3>
                 <p className="design-para">Period poverty is the lack of access to sanitary products, menstrual hygiene education, toilets, hand washing facilities, and, or, waste management.</p>

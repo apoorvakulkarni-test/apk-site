@@ -11,6 +11,8 @@ const H2 = (props) => {
                 .design-subheading-top {
                     color: #828282;
                     font-size: 14px;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 5px;
                 }
                 .design-subheading-bottom {
                     font-size: 32px;

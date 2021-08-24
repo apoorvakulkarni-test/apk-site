@@ -68,28 +68,28 @@ After conducting surveys and creating a user profile, the majority of the respon
                 <H2 top="HEURISTICS" bottom="Evaluation Findings" />
                 <p className="design-para">Most of the confusion was due to the absence of an onboarding process.The application was complicated and caused users to rely on self-instruction to navigate the application. The iconography was also difficult to interpret as they were uncommon and did not have any labels to clarify the vagueness.</p>
                 <h3 className="design-h3 gray">Task 1: Searching and selecting a bus route to travel</h3>
-                <p className="design-para bold">a) Lack of automated result</p>
+                <p className="design-span bold">a) Lack of automated result</p>
                 <p className="design-para"><b>Severity</b>: 4
                 <br /><b>Heuristic</b>: Recognition rather than recall, Flexibility and efficiency of us
                 <br /><b>Description</b>: Performing task one was extremely time consuming and difficult especially for novice users. When a user wishes to select a bus route to travel from current location to desired destination, the user has to manually click on the available bus routes to find the user’s desired location. Further, the application does not have a search option to look for destinations which causes the user to recursively search through the list of bus routes that stop at the desired destination. Due to the lack of automated results, users must manually search through the numerous bus lines and stops to figure out which buses can take them from their current location to their desired destination. Users must not only calculate the bus stop closest to them but also which bus lines stop at their nearest bus stop. This causes frustration and a sense of overwhelm especially in cases when the user is a novice user or in a hurry to go somewhere.</p>
                 <br />
-                <p className="design-para bold">b) Ambiguous Icons</p>
+                <p className="design-span bold">b) Ambiguous Icons</p>
                 <p className="design-para"><b>Severity</b>: 2
 <br /><b>Heuristic</b>: Consistency and standards, Recognition rather than recall
 <br /><b>Description</b>: Since the bus travelling icon is the same as the current location icon, it creates confusion within the user. Users would have to remember that the icon that moves is the bus and not the current location icon. Further, the bus stop icon used in the menu bar differs from the one on the map. When the user clicks on the bus stop icon on the map, it transforms into the icon used in the menu bar.</p>
                 <img className="center-mg max-width-100" alt="Rider 1" src={RiderOne} />
                 <h3 className="design-h3 gray">Task 2: Setting a timer notification</h3>
-                <p className="design-para bold">a) Limits customization</p>
+                <p className="design-span bold">a) Limits customization</p>
                 <p className="design-para"><b>Severity:</b> 2
                 <br /><b>Heuristic evaluation</b>: Flexibility and efficiency of use
                 <br /><b>Description</b>: When setting a reminder, users are only given the option of times that are in 5 minute intervals. Although this gives the user an opportunity to save time by setting a notification, the user is not given the liberty to customize the amount of time that they would like to be notified. This affected the ease of use, satisfaction of the user and time efficiency negatively.</p>
                 <img className="center-mg max-width-100" alt="Rider 1" src={RiderTwo} />
                 <h3 className="design-h3 gray">Task 3: Using the favorite feature</h3>
-                <p className="design-para bold">a) Insufficient information regarding the favorite feature.</p>
+                <p className="design-span bold">a) Insufficient information regarding the favorite feature.</p>
                 <p className="design-para"><b>Severity: 3</b>
                 <br /><b>Heuristic evaluation</b>: Help and Documentation
                 <br /><b>Description: </b>The favorite feature has a lot of scope for improvement. Due to the lack of clarity, users may have to wander through the application to figure out how to use it. When users clicked on the heart icon in the menu bar, they were met with a message saying “Hi, looks like you don’t have any favorites yet. Tap on a heart and give it a try!”. These instructions do not provide what this feature is used for, more specifically what can be favorited: bus line or bus stop, and where the heart can be found.</p>
-                <p className="design-para bold">Icon ambiguity</p>
+                <p className="design-span bold">b) Icon ambiguity</p>
                 <p className="design-para"><b>Severity</b>: 3
                 <br /><b>Heuristic evaluation</b>: Consistency and Standards, Error prevention
                 <br /><b>Description</b>: While some users may be unsure which heart the instructions were referring to, other users may struggle to find the heart. Since the heart is a very small icon, it emphasised the ambiguity of whether the heart was an indicator or a clickable button. Additionally, there are other icons surrounding the small heart icon making it easy for users to accidently click the other icons. Overall, the favorite feature needs to be better.</p>

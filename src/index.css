@@ -63,13 +63,17 @@ code {
 .design-h1 {
   font-size: 40px;
   font-family: PrimaryFont;
+  margin-bottom: 0;
+  margin-top: 15px;
 }
 .design-h1-desc {
+  margin-top: 8px;
   font-size: 24px;
   font-family: PrimaryLight;
 }
 .design-h3 {
-  font-family: PrimaryBold;
+  margin: 15px 0 8px 0;
+  font-family: SecondaryBoldFont;
   font-size: 20px;
   font-weight: 400;
 }
@@ -77,14 +81,25 @@ code {
   color: #828282;
 }
 .design-info {
-  margin-right: 5em;
+  margin-right: 3em;
   font-size: 18px;
   font-family: PrimaryLight;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 .design-para {
   font-family: SecondaryFont;
   font-size: 18px;
   line-height: 1.8em;
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.design-span {
+  font-family: SecondaryFont;
+  font-size: 18px;
+  line-height: 1.8em;
+  margin: 0;
 }
 
 .bold {
@@ -122,5 +137,9 @@ code {
 }
 .styleless-link:visited {
   text-decoration: none;
+}
+
+.secondary-bold {
+  
 }
 

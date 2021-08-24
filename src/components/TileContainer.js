@@ -88,7 +88,7 @@ const TileContainer = (props) => {
                 }
                 .tile-image-info {
                     box-sizing: border-box;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 800;
                     letter-spacing: 2px;
                     padding: 32px;
@@ -102,7 +102,7 @@ const TileContainer = (props) => {
                     justify-content: flex-end;
                     align-items: flex-start;
                     flex-direction: column;
-                    font-family: SecondaryFont;
+                    font-family: SecondaryBoldFont;
                 }
                 .tile-image-info-title {
                     margin: 0;
@@ -121,6 +121,7 @@ const TileContainer = (props) => {
                     font-size: 24px;
                     font-weight: 500;
                     margin-top: 10px;
+                    letter-spacing: 0px;
                 }
             `}    
             </style>

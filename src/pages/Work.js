@@ -6,8 +6,8 @@ import UCSCard from '@images/ucs-card.png'
 import RiderCard from '@images/rider-card.png'
 import FloLogo from '@images/flo-logo.png'
 import TranslocLogo from '@images/transloc-logo.png'
-import UCSLogo from '@images/ucs-logo.png'
-import AmazonLogo from '@images/amazon-logo.png'
+import UCSLogo from '@images/ucs-logo.jpg'
+import AmazonLogo from '@images/amazon-logo.jpg'
 
 const tilesContent = [
   {
@@ -16,7 +16,7 @@ const tilesContent = [
     pic: AmazonCard,
     logo: AmazonLogo,
     dest: "work/amazon",
-    logoSize: "calc(25% + 50px) auto"
+    logoSize: "calc(25% + 85px) auto"
   },
   {
     title: "DESIGN CHALLENGE",
@@ -32,7 +32,7 @@ const tilesContent = [
     pic: UCSCard,
     dest: 'work/uconnsurvive',
     logo: UCSLogo,
-    logoSize: "calc(25% + 70px) auto"
+    logoSize: "calc(25% + 40px) auto"
   },
   {
     title: "INDIVIDUAL PROJECT",
@@ -40,7 +40,7 @@ const tilesContent = [
     pic: RiderCard,
     dest: 'work/rider',
     logo: TranslocLogo,
-    logoSize: "calc(25% + 90px) auto"
+    logoSize: "calc(30% + 120px) auto"
   },
 ]
 function Work() {

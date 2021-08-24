@@ -65,6 +65,7 @@ code {
   font-family: PrimaryFont;
   margin-bottom: 0;
   margin-top: 15px;
+  font-weight: 400;
 }
 .design-h1-desc {
   margin-top: 8px;
@@ -87,6 +88,7 @@ code {
   margin-bottom: 15px;
   display: inline-block;
 }
+
 .design-para {
   font-family: SecondaryFont;
   font-size: 18px;
@@ -94,6 +96,7 @@ code {
   margin: 0;
   padding-bottom: 22px;
 }
+
 
 .design-span {
   font-family: SecondaryFont;

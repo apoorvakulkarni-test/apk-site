@@ -6,6 +6,7 @@ import About from './pages/About'
 import UConnSurvive from './pages/UConnSurvive'
 import Rider from './pages/Rider'
 import Wish from './pages/Wish'
+import Amazon from './pages/Amazon'
 import NavBar from '@components/NavBar'
 import Footer from '@components/Footer'
 import {
@@ -30,6 +31,7 @@ ReactDOM.render(
           <Route exact path="/work/uconnsurvive" component={UConnSurvive} />
           <Route exact path="/work/wish" component={Wish} />
           <Route exact path="/work/rider" component={Rider} />
+          <Route exact path="/work/amazon" component={Amazon} />
         </Switch>
         <Footer />
       </Router>

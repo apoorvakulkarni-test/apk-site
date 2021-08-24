@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '@design/Banner'
 import Container from '@design/Container'
+import H2 from '@design/H2'
 import RiderCard from '@images/rider-card.png'
 import RiderOne from '@images/rider-1.png'
 import RiderTwo from '@images/rider-2.png'
@@ -10,7 +11,7 @@ import RiderFive from '@images/rider-5.png'
 import RiderSix from '@images/rider-6.png'
 import RiderSeven from '@images/rider-7.png'
 import RiderIdea from '@images/rider-ideation.png'
-import H2 from '@design/H2'
+
 
 const Rider = () => {
     window.scrollTo(0,0)

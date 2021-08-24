@@ -23,10 +23,10 @@ const Introduction = () => {
             </div>
             <style jsx>{`
                 .introduction-image {
-                    width: 33%;
+                    width: 30%;
                     position: absolute;
                     right: 0;
-                    top: calc(50% - (33vw / 2));              
+                    top: calc(50% - (30vw / 2));              
                 }
                 .introduction-container {
                     margin: ${BODY_MARGIN};

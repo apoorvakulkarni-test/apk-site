@@ -30,6 +30,7 @@ const NavBar = () => {
                     font-size: 18px;
                     letter-spacing: 3px;
                     color: #828282;
+                    font-weight: 400;
                 }
                 .menu-option-container { 
                     display: flex;

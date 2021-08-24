@@ -15,28 +15,32 @@ const tilesContent = [
     desc: "Reimagining the onboarding experience @ Amazon",
     pic: AmazonCard,
     logo: AmazonLogo,
-    locked: true
+    dest: "work/amazon",
+    logoSize: "calc(25% + 50px) auto"
   },
   {
     title: "DESIGN CHALLENGE",
     desc: "Making menstrual hygiene products more accessible with Flo",
     pic: WishCard,
     dest: "work/wish",
-    logo: FloLogo
+    logo: FloLogo,
+    logoSize: "calc(25% + 70px) auto"
   },
   {
     title: "PASSION PROJECT",
     desc: "Giving abuse, assault and harassment survivors a voice",
     pic: UCSCard,
     dest: 'work/uconnsurvive',
-    logo: UCSLogo
+    logo: UCSLogo,
+    logoSize: "calc(25% + 70px) auto"
   },
   {
     title: "INDIVIDUAL PROJECT",
     desc: "Designing a simpler, faster transit system around campus",
     pic: RiderCard,
     dest: 'work/rider',
-    logo: TranslocLogo
+    logo: TranslocLogo,
+    logoSize: "calc(25% + 90px) auto"
   },
 ]
 function Work() {

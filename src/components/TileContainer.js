@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import useVisibilitySensor from "@rooks/use-visibility-sensor"
-import LockIcon from '@images/lock.png'
 
 const TileContainer = (props) => {
     const rootNode = useRef(null)
@@ -21,16 +20,17 @@ const TileContainer = (props) => {
         <div ref={rootNode} className={titleContainerClasses}>
             <h2 className="tile-title">{props.title}</h2>
             <div className="tile-body">
-                {props.tiles.map(({ title, desc, pic, dest, logo, locked }) => (
+                {props.tiles.map(({ title, desc, pic, dest, logo, logoSize }) => (
                     <Link
                         style={{
-                            backgroundImage: `url(${logo})`
+                            backgroundImage: `url(${logo})`,
+                            backgroundSize: logoSize
                         }} 
                         to={dest} 
                         className="tile-image-container">
                         <img alt="Tile" className="tile-image" src={pic} />
                         <div className="tile-image-info">
-                            <h3 className="tile-image-info-title">{title} {locked === true &&<img alt="Lock Icon" src={LockIcon}></img>}</h3>
+                            <h3 className="tile-image-info-title">{title}</h3>
                             <p className="tile-image-desc">{desc}</p>
                         </div>
                     </Link>
@@ -65,7 +65,6 @@ const TileContainer = (props) => {
                 .tile-image-container {
                     background-repeat: no-repeat;
                     background-position: center 25%;
-                    background-size: calc(25% + 70px) auto;
                     position: relative;
                     background-color: white;
                     margin: 10px;
@@ -89,6 +88,9 @@ const TileContainer = (props) => {
                 }
                 .tile-image-info {
                     box-sizing: border-box;
+                    font-size: 14px;
+                    font-weight: 800;
+                    letter-spacing: 2px;
                     padding: 32px;
                     bottom: 0;
                     left: 0;
@@ -118,6 +120,7 @@ const TileContainer = (props) => {
                     color: black;
                     font-size: 24px;
                     font-weight: 500;
+                    margin-top: 10px;
                 }
             `}    
             </style>

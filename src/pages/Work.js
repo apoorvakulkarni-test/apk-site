@@ -8,6 +8,8 @@ import FloLogo from '@images/flo-logo.png'
 import TranslocLogo from '@images/transloc-logo.png'
 import UCSLogo from '@images/ucs-logo.jpg'
 import AmazonLogo from '@images/amazon-logo.jpg'
+import { useHistory } from "react-router-dom";
+import { useEffect } from 'react'
 
 const tilesContent = [
   {
@@ -44,6 +46,11 @@ const tilesContent = [
   },
 ]
 function Work() {
+  let history = useHistory()
+
+  useEffect(() => {
+    history.push("https://apkportfolio.wixsite.com/home")
+  })
   return (
     <div>
       <Introduction />

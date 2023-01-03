@@ -13,6 +13,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
@@ -20,6 +21,13 @@ import reportWebVitals from './reportWebVitals';
 // <Redirect to="/work" />
 // </Route>
 // 
+
+/*
+<Route exact path="/" component={() => {
+    window.location.href = 'https://apkportfolio.wixsite.com/home';
+    return null;
+}} />
+*/
 ReactDOM.render(
   <React.StrictMode>
     <div>
@@ -28,10 +36,9 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/work" component={Work} />
           <Route path="/about" component={About} />
-          <Route exact path="/" component={() => {
-    window.location.href = 'https://apkportfolio.wixsite.com/home';
-    return null;
-}} />
+          <Route exact path="/">
+            <Redirect to="/work" />
+          </Route>
           <Route exact path="/work/uconnsurvive" component={UConnSurvive} />
           <Route exact path="/work/wish" component={Wish} />
           <Route exact path="/work/rider" component={Rider} />
